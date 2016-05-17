@@ -12,7 +12,7 @@ In-process async task queue with concurrency control and retry.
 
 ```kotlin
 dependencies {
-    implementation("com.philiprehberger:task-queue:0.1.2")
+    implementation("com.philiprehberger:task-queue:0.1.3")
 }
 ```
 
@@ -22,7 +22,7 @@ dependencies {
 <dependency>
     <groupId>com.philiprehberger</groupId>
     <artifactId>task-queue</artifactId>
-    <version>0.1.2</version>
+    <version>0.1.3</version>
 </dependency>
 ```
 
