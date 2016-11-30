@@ -1,6 +1,6 @@
 # task-queue
 
-[![CI](https://github.com/philiprehberger/kt-task-queue/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-task-queue/actions/workflows/publish.yml)
+[![Tests](https://github.com/philiprehberger/kt-task-queue/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-task-queue/actions/workflows/publish.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/task-queue)](https://central.sonatype.com/artifact/com.philiprehberger/task-queue)
 [![License](https://img.shields.io/github/license/philiprehberger/kt-task-queue)](LICENSE)
 
@@ -11,9 +11,7 @@ In-process async task queue with concurrency control and retry.
 ### Gradle (Kotlin DSL)
 
 ```kotlin
-dependencies {
-    implementation("com.philiprehberger:task-queue:0.1.3")
-}
+implementation("com.philiprehberger:task-queue:0.1.4")
 ```
 
 ### Maven
@@ -22,7 +20,7 @@ dependencies {
 <dependency>
     <groupId>com.philiprehberger</groupId>
     <artifactId>task-queue</artifactId>
-    <version>0.1.3</version>
+    <version>0.1.4</version>
 </dependency>
 ```
 

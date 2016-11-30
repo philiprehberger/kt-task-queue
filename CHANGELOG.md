@@ -1,4 +1,9 @@
 # Changelog
+
+## 0.1.4 (2026-03-22)
+
+- Fix README compliance (badge label, installation format)
+
 ## 0.1.3 (2026-03-20)
 
 - Fix test: use runBlocking and thread-safe collection instead of runTest with virtual time
