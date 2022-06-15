@@ -11,7 +11,7 @@ In-process async task queue with concurrency control and retry.
 ### Gradle (Kotlin DSL)
 
 ```kotlin
-implementation("com.philiprehberger:task-queue:0.1.4")
+implementation("com.philiprehberger:task-queue:0.2.0")
 ```
 
 ### Maven
@@ -20,7 +20,7 @@ implementation("com.philiprehberger:task-queue:0.1.4")
 <dependency>
     <groupId>com.philiprehberger</groupId>
     <artifactId>task-queue</artifactId>
-    <version>0.1.4</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 
@@ -41,6 +41,33 @@ queue.submit("task-1")
 queue.stats() // pending, active, completed, failed
 ```
 
+### Batch Submit
+
+```kotlin
+queue.submitAll(listOf("task-1", "task-2", "task-3"))
+```
+
+### Drain
+
+```kotlin
+queue.submit("task-1")
+queue.submit("task-2")
+queue.drain() // Suspends until all tasks are processed
+```
+
+### Dead Letter Handling
+
+```kotlin
+val queue = taskQueue<String> {
+    concurrency(4)
+    handler { processTask(it) }
+    retry(maxAttempts = 3, delayMs = 1000)
+    onDeadLetter { task, error ->
+        log.error("Task permanently failed: $task", error)
+    }
+}
+```
+
 ## API
 
 | Function / Class | Description |
@@ -49,7 +76,10 @@ queue.stats() // pending, active, completed, failed
 | `TaskQueue.submit(task)` | Submit a task |
 | `TaskQueue.stats()` | Get queue statistics |
 | `TaskQueue.pause()` / `resume()` | Control processing |
+| `TaskQueue.submitAll(tasks)` | Submit multiple tasks at once |
+| `TaskQueue.drain()` | Wait for all tasks to complete |
 | `TaskQueue.shutdown()` | Shut down the queue |
+| `onDeadLetter { }` | Handle tasks that exhaust retries |
 
 ## Development
 

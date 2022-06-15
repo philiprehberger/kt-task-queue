@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0 (2026-03-31)
+
+- Add `drain()` to suspend until all submitted tasks are processed
+- Add `submitAll()` for batch task submission
+- Add `onDeadLetter()` handler for tasks that exhaust all retry attempts
+
 ## 0.1.5 (2026-03-31)
 
 - Standardize README to 3-badge format with emoji Support section
