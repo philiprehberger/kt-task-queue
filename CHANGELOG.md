@@ -1,5 +1,11 @@
 # Changelog
-## 0.1.2 (2026-03-20)- Standardize README: fix title, badges, version sync, remove Requirements section
+## 0.1.3 (2026-03-20)
+
+- Fix test: use runBlocking and thread-safe collection instead of runTest with virtual time
+
+## 0.1.2 (2026-03-20)
+
+- Standardize README: fix title, badges, version sync, remove Requirements section
 
 ## [0.1.1] - 2026-03-18
 
