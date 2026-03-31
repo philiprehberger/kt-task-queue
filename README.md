@@ -1,9 +1,8 @@
 # task-queue
 
 [![Tests](https://github.com/philiprehberger/kt-task-queue/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-task-queue/actions/workflows/publish.yml)
-[![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/task-queue)](https://central.sonatype.com/artifact/com.philiprehberger/task-queue)
-[![License](https://img.shields.io/github/license/philiprehberger/kt-task-queue)](LICENSE)
-[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
+[![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/task-queue.svg)](https://central.sonatype.com/artifact/com.philiprehberger/task-queue)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/kt-task-queue)](https://github.com/philiprehberger/kt-task-queue/commits/main)
 
 In-process async task queue with concurrency control and retry.
 
@@ -59,6 +58,24 @@ queue.stats() // pending, active, completed, failed
 ./gradlew build
 ```
 
+## Support
+
+If you find this project useful:
+
+⭐ [Star the repo](https://github.com/philiprehberger/kt-task-queue)
+
+🐛 [Report issues](https://github.com/philiprehberger/kt-task-queue/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+
+💡 [Suggest features](https://github.com/philiprehberger/kt-task-queue/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
+❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
+
+🌐 [All Open Source Projects](https://philiprehberger.com/open-source-packages)
+
+💻 [GitHub Profile](https://github.com/philiprehberger)
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/philiprehberger)
+
 ## License
 
-MIT
+[MIT](LICENSE)
